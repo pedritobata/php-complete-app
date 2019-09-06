@@ -4,7 +4,7 @@
 $dir = "mi_carpeta";
 if(!is_dir($dir)){
     //el segundo parametro de mkdir son los permisos, tipo Linux
-    mkdir($dir, 777);
+    mkdir($dir, 0777);
     echo "Carpeta '$dir' creada con éxito!!";
 }else{
     echo "Ya existe la carpeta '$dir'";
